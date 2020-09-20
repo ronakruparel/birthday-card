@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/models/initailRender.js"></script>
+    <title>Birthday Card</title>
+  </head>
+  <body onload="renderJson()">
+    <div class="container" id="conatiner">
+      <div class="header">
+        <h1 class="title">Birthday Cal</h1>
+      </div>
+      <div class="content">
+        <div class="weekdays">
+          <div id="mon" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">MON</h3>
+              </div>
+              <div id="1" class="card-body"></div>
+            </div>
+          </div>
+          <div id="tue" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">TUE</h3>
+              </div>
+              <div id="2" class="card-body"></div>
+            </div>
+          </div>
+          <div id="wed" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">WED</h3>
+              </div>
+              <div id="3" class="card-body"></div>
+            </div>
+          </div>
+          <div id="thu" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">THU</h3>
+              </div>
+              <div id="4" class="card-body"></div>
+            </div>
+          </div>
+          <div id="fri" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">FRI</h3>
+              </div>
+              <div id="5" class="card-body"></div>
+            </div>
+          </div>
+          <div id="sat" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">SAT</h3>
+              </div>
+              <div id="6" class="card-body"></div>
+            </div>
+          </div>
+          <div id="sun" class="card">
+            <div class="card-wrapper">
+              <div class="card-header">
+                <h3 class="day">SUN</h3>
+              </div>
+              <div id="0" class="card-body"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <div class="input-content">
+            <span id="invalid-json" class="invalid-json"><h3>Invalid JSON</h3></span>
+            <textarea id="textarea" class="text-area"></textarea>
+          </div>
+          <div class="year-input">
+            <span class="empty-input" id="empty-input"><h1>Empty</h1></span>
+            <span class="year-label">Year</span>
+            <br />
+            <input id="year-input-field" class="year-input-field" type="text" />
+            <br />
+            <button onclick="_updateBirthdayCards()" class="update-button">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
